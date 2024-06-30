@@ -1,0 +1,134 @@
+<!--
+    Hello, code inspector!
+    Please don't judge my code, I'm not an expert in HTML, CSS and JavaScript or optimizing my code.
+    Don't get confused if anything is programmed in an unusual way! 😅
+    You can still give me advice in #website on my Discord server about the code or the website itself!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tycho Games website</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut" href="icon.png" type="image/x-icon">
+    <link id="icon" rel="icon" href="icon.png" type="image/x-icon">
+    <style type="text/css">
+        .logo {
+            animation-duration: 5s;
+            left: 0;
+            right: 0;
+        }
+        @keyframes logo-Ty-animation {
+            0% {
+                transform: translateY(-200%);
+            }
+            20% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes logo-cho-animation {
+            0% {
+                transform: translateY(-200%);
+            }
+            10% {
+                transform: translateY(-200%);
+            }
+            30% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes logo-Tycho-animation {
+            0% {
+                margin-right: 0;
+            }
+            40% {
+                margin-right: 0;
+            }
+            60% {
+                margin-right: 325px;
+            }
+            100% {
+                margin-right: 325px;
+            }
+        }
+        @keyframes logo-Games-animation {
+            0% {
+                margin-left: 100%;
+            }
+            30% {
+                margin-left: 100%;
+            }
+            50% {
+                margin-left: 290px;
+            }
+            100% {
+                margin-left: 290px;
+            }
+        }
+        #start-links a {
+            animation-duration: 5s;
+            animation-name: start-links;
+            padding: 10px;
+        }
+        @media (prefers-color-scheme: light) {
+            #start-links a {
+                color: #808080;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            #start-links a {
+                color: #bfbfbf;
+            }
+        }
+        #start-links a img {
+            margin-bottom: -5px;
+            height: 24px
+        }
+        @keyframes start-links {
+            0% {
+                opacity: 0;
+            }
+            70% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes intro-page-slide-in {
+            0% {
+                padding-top: 100%;
+            }
+            80% {
+                padding-top: 100%;
+            }
+            100% {
+                padding-top: 100px;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        function SweatSmileMode() {
+            document.title = "The SweatSmile website";
+            document.getElementById("icon").setAttribute("href","https://cdn.discordapp.com/emojis/678182561385676811.webp?size=56&quality=lossless");
+            document.body.getElementsByTagName("h1")[0].innerHTML = "<span style='color: #64aadd;'>Sweat</span><span style='color: #fecc4d;'>Smile</span>";
+            document.getElementById("start-links").getElementsByTagName("a")[0].href = "https://play.fancade.com/5E53059B1676DB9C"
+        }
+    </script>
+</head>
+<body>
+    <img class="intro" style="position: absolute; text-align: left; left: 5px; top: 5px; cursor: pointer; animation-delay: -1s; animation-name: start-links; animation-duration: 5s;" src="https://cdn.discordapp.com/emojis/678182561385676811.webp?size=56&quality=lossless" onclick="SweatSmileMode();" title="Click. Click on me. Do it. Don't be shy. Click on me. Come on.">
+    <h1 class="logo intro" style="font-size: 100px; height: 100px;">
+        <div class="logo intro" style="color: #0AF; animation-name: logo-Tycho-animation; animation-timing-function: cubic-bezier(.01,.67,.18,1.6); position: absolute; margin-right: 325px">
+            <div class="logo intro" style="animation-name: logo-Ty-animation; animation-timing-function: cubic-bezier(.71,1.77,0,.52); display: inline-block;">Ty</div><div class="logo" style="animation-name: logo-cho-animation; animation-duration: 5s; animation-timing-function: cubic-bezier(.71,1.77,0,.52); display: inline-block;">cho</div>
+        </div>
+        <div class="logo intro" style="animation-name: logo-Games-animation; animation-duration: 5s; color: #FF8000; animation-timing-function: cubic-bezier(.77,1.36,.49,1.01); position: absolute; margin-left: 290px; overflow: hidden;">Games</div>
+    </h1>
+    <h2 id="start-links"><a class="intro" style="animation-delay: -2s;" href="fancade.html" title="Play my Fancade games!">Fancade <img src="https://www.fancade.com/images/fancade.jpg"></a><a class="intro" style="animation-delay: -1.5s;" href="https://www.youtube.com/@tycho_games" title="Watch my YouTube videos!">YouTube <img src="https://www.youtube.com/s/desktop/28bb7000/img/favicon_32x32.png"></a><a class="intro" style="animation-delay: -1s;" href="https://discord.gg/Ch8Y4RaABx" title="Join my Discord server!">Discord <img src="https://cdn.discordapp.com/emojis/1251637615028080641.webp?size=56&quality=lossless"></a><a class="intro" style="animation-delay: -0.5s;" href="https://youtube.com/playlist?list=PLksBvzvTsMzBPHszxRVH85X8yxSZc_2JU" title="Listen to my music!">Music 🎵</a></h2>
+    <h1 style="padding-top: 100px; animation-name: intro-page-slide-in; animation-duration: 5s;">News</h1>
+    <div id="news">1 2</div>
+    <script src="news/news.js"></script>
+</body>
+</html>

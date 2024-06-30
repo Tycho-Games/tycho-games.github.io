@@ -1,0 +1,24 @@
+{
+    "news": [
+        {
+            "title": "The Tycho Games website is here!",
+            "description": "The new Tycho Games website is here, you are there right now!",
+            "image": ""
+        },
+        {
+            "title": "Tycho Games news!",
+            "description": "Welcome to the Tycho Games news section! Here you can find the latest updates of Tycho Games! You can also find the news",
+            "image": ""
+        }
+    ],
+    "articles": [
+        {
+            "title": "The Tycho Games website is here!",
+            "content": "Welcome to the Tycho Games website. Here you can find links to my stuff, news and more!"
+        },
+        {
+            "title": "Tycho Games news!",
+            "content": "The news section is for all the big news about Tycho Games! This news <i>(except for this article)</i> also appears in <a href='https://discord.com/channels/1248663388381511700/1250495796650971248'>#tycho-games-news</a> in <a href='https://discord.gg/Ch8Y4RaABx' target='_blank'>the Tycho Games Discord server</a>."
+        }
+    ]
+}
