@@ -15,10 +15,25 @@
     <link rel="shortcut" href="icon.png" type="image/x-icon">
     <link id="icon" rel="icon" href="icon.png" type="image/x-icon">
     <style type="text/css">
+        h1.intro {
+            font-size: 100px;
+            --logo-tycho-space: 325px;
+            --logo-games-space: 290px;
+            --logo-games-overshoot-limit: 2000px;
+        }
+        @media screen and (max-width: 600px) {
+            h1.intro {
+                font-size: 17vw;
+                --logo-tycho-space: 55.25vw;
+                --logo-games-space: 49.3vw;
+                --logo-games-overshoot-limit: 340vw;
+            }
+        }
         .logo {
             animation-duration: 5s;
             left: 0;
             right: 0;
+            white-space: nowrap;
         }
         @keyframes logo-Ty-animation {
             0% {
@@ -47,24 +62,27 @@
                 margin-right: 0;
             }
             60% {
-                margin-right: 325px;
+                margin-right: var(--logo-tycho-space);
             }
             100% {
-                margin-right: 325px;
+                margin-right: var(--logo-tycho-space);
             }
         }
         @keyframes logo-Games-animation {
             0% {
-                margin-left: 100%;
+                opacity: 0;
+                margin-left: var(--logo-games-overshoot-limit);
             }
             30% {
-                margin-left: 100%;
+                opacity: 0;
+                margin-left: var(--logo-games-overshoot-limit);
             }
             50% {
-                margin-left: 290px;
+                margin-left: var(--logo-games-space);
+                opacity: 1;
             }
             100% {
-                margin-left: 290px;
+                margin-left: var(--logo-games-space);
             }
         }
         #start-links a {
@@ -99,10 +117,10 @@
         }
         @keyframes intro-page-slide-in {
             0% {
-                padding-top: 100%;
+                padding-top: 100vh;
             }
             80% {
-                padding-top: 100%;
+                padding-top: 100vh;
             }
             100% {
                 padding-top: 100px;
@@ -110,7 +128,7 @@
         }
     </style>
     <script type="text/javascript">
-        alert("Warning: this page is still work in progress. There are a lot of broken things that are being worked on, like: SweatSmile mode, news, articles, Fancade page and other upcoming features.");
+        alert("Warning!\n\nThis page is still work in progress!\nThere are a lot of things being worked on. Most things are broken and unfinished!");
 
         function SweatSmileMode() {
             document.title = "The SweatSmile website";
@@ -122,14 +140,14 @@
 </head>
 <body>
     <img class="intro" style="position: absolute; text-align: left; left: 5px; top: 5px; cursor: pointer; animation-delay: -1s; animation-name: start-links; animation-duration: 5s;" src="https://cdn.discordapp.com/emojis/678182561385676811.webp?size=56&quality=lossless" onclick="SweatSmileMode();" title="Click. Click on me. Do it. Don't be shy. Click on me. Come on.">
-    <h1 class="logo intro" style="font-size: 100px; height: 100px;">
-        <div class="logo intro" style="color: #0AF; animation-name: logo-Tycho-animation; animation-timing-function: cubic-bezier(.01,.67,.18,1.6); position: absolute; margin-right: 325px">
+    <h1 class="logo intro" style="height: 100px;">
+        <div class="logo intro" style="color: #0AF; animation-name: logo-Tycho-animation; animation-timing-function: cubic-bezier(.01,.67,.18,1.6); position: absolute; margin-right: var(--logo-tycho-space)">
             <div class="logo intro" style="animation-name: logo-Ty-animation; animation-timing-function: cubic-bezier(.71,1.77,0,.52); display: inline-block;">Ty</div><div class="logo" style="animation-name: logo-cho-animation; animation-duration: 5s; animation-timing-function: cubic-bezier(.71,1.77,0,.52); display: inline-block;">cho</div>
         </div>
-        <div class="logo intro" style="animation-name: logo-Games-animation; animation-duration: 5s; color: #FF8000; animation-timing-function: cubic-bezier(.77,1.36,.49,1.01); position: absolute; margin-left: 290px; overflow: hidden;">Games</div>
+        <div class="logo intro" style="animation-name: logo-Games-animation; animation-duration: 5s; color: #FF8000; animation-timing-function: cubic-bezier(.76,1.27,.49,1.01); position: absolute; margin-left: var(--logo-games-space); overflow: hidden;">Games</div>
     </h1>
     <h2 id="start-links"><a class="intro" style="animation-delay: -2s;" href="fancade.html" title="Play my Fancade games!">Fancade <img src="https://www.fancade.com/images/fancade.jpg"></a><a class="intro" style="animation-delay: -1.5s;" href="https://www.youtube.com/@tycho_games" title="Watch my YouTube videos!">YouTube <img src="https://www.youtube.com/s/desktop/28bb7000/img/favicon_32x32.png"></a><a class="intro" style="animation-delay: -1s;" href="https://discord.gg/Ch8Y4RaABx" title="Join my Discord server!">Discord <img src="https://cdn.discordapp.com/emojis/1251637615028080641.webp?size=56&quality=lossless"></a><a class="intro" style="animation-delay: -0.5s;" href="https://youtube.com/playlist?list=PLksBvzvTsMzBPHszxRVH85X8yxSZc_2JU" title="Listen to my music!">Music 🎵</a></h2>
-    <h1 style="padding-top: 100px; animation-name: intro-page-slide-in; animation-duration: 5s;">News</h1>
+    <h1 style="padding-top: 100px; animation-name: intro-page-slide-in; animation-duration: 5s;">News 📰</h1>
     <div id="news">1 2</div>
     <script src="news/news.js"></script>
 </body>
