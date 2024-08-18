@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥄🗿🥖</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/microsoft/fluentui-emoji/14053d26005b9afe3ce0e020862ed5ab2335f989/assets/Moai/Flat/moai_flat.svg" type="image/x-icon">
+</head>
+<body style="overflow: hidden; text-align: center;">
+    <div id="MoaiGenerator"></div>
+    <script type="text/javascript">
+        var Moai = "🥄🗿🥖";
+        var time = 0;
+        var Friends = ["🗿🍕","🪨<br>🗿","🪨<br>🥄🗿🥖"];
+        function SMBB() {
+            if (Math.random() < 0.99) {
+                Moai = "🥄🗿🥖";
+            } else {
+                Moai = Friends[Math.floor(Math.random() * Friends.length)];
+            }
+            time = time + 0.1;
+            document.title = Moai.replace("🪨<br>🗿", "🪨↗️🗿 (act like the stone is on the moai)").replace("🪨<br>🥄🗿🥖", "🪨↗️🥄🗿🥖 (act like the stone is on the moai)");
+            const moaiDiv = document.createElement('div');
+            moaiDiv.innerHTML = Moai;
+            moaiDiv.className = "🥄🗿🥖";
+            moaiDiv.style.overflow = "hidden";
+            moaiDiv.style.position = "absolute";
+            moaiDiv.style.left = (Math.random() * 100 - 50) + "%";
+            moaiDiv.style.top = (Math.random() * 100 - 50) + "%";
+            moaiDiv.style.right = (Math.random() * 100 - 50) + "%";
+            moaiDiv.style.bottom = (Math.random() * 100 - 50) + "%";
+            moaiDiv.style.fontSize = Math.random() * 130 + "px";
+            moaiDiv.style.transform = "Rotate(" + Math.random() * 360 + "deg)";
+            document.getElementById("MoaiGenerator").appendChild(moaiDiv);
+            new Audio("https://www.myinstants.com/media/sounds/moai.mp3").play();
+            setTimeout(SMBB, time);
+        }
+        SMBB();
+    </script>
+</body>
+</html>
