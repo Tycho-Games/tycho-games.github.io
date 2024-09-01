@@ -15,7 +15,6 @@
     <title>The Tycho Games website</title>
     <meta name="description" content="This is the Tycho Games website! I am known for my Fancade games, YouTube channel and Discord server!">
     <meta name="keywords" content="Fancade, 🥄🗿🥖, Robocube T, Swipe Assassin">
-    <meta name="author" content="Tycho">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="shortcut" href="icon.png" type="image/x-icon">
     <link id="icon" rel="icon" href="icon.png" type="image/x-icon">
@@ -137,6 +136,7 @@
     </script>
 </head>
 <body>
+    <a id="SMBBButton" href="🥄🗿🥖" style="position: absolute; text-align: left; left: 5px; top: 5px; animation-delay: -1s; animation-name: start-links; animation-duration: 5s;"><img width="56px" class="intro" src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/14053d26005b9afe3ce0e020862ed5ab2335f989/assets/Spoon/Flat/spoon_flat.svg"><img width="56px" class="intro" src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/14053d26005b9afe3ce0e020862ed5ab2335f989/assets/Moai/Flat/moai_flat.svg"><img width="56px" class="intro" src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/14053d26005b9afe3ce0e020862ed5ab2335f989/assets/Baguette%20bread/Flat/baguette_bread_flat.svg"></a>
     <h1 class="logo intro" style="height: 100px;">
         <div class="logo intro" style="color: #0AF; animation-name: logo-Tycho-animation; animation-timing-function: cubic-bezier(.01,.67,.18,1.6); position: absolute; margin-right: var(--logo-tycho-space)">
             <div class="logo intro" style="animation-name: logo-Ty-animation; animation-timing-function: cubic-bezier(.71,1.77,0,.52); display: inline-block;">Ty</div><div class="logo" style="animation-name: logo-cho-animation; animation-duration: 5s; animation-timing-function: cubic-bezier(.71,1.77,0,.52); display: inline-block;">cho</div>
@@ -144,5 +144,10 @@
         <div class="logo intro" style="animation-name: logo-Games-animation; animation-duration: 5s; color: #FF8000; animation-timing-function: cubic-bezier(.76,1.27,.49,1.01); position: absolute; margin-left: var(--logo-games-space); overflow: hidden;">Games</div>
     </h1>
     <h2 id="start-links"><a class="intro" style="animation-delay: -2s;" href="fancade.html" title="Play my Fancade games!">Fancade <img src="https://www.fancade.com/images/fancade.jpg"></a><a class="intro" style="animation-delay: -1.5s;" href="https://www.youtube.com/@tycho_games" title="Watch my YouTube videos!">YouTube <img src="https://www.youtube.com/s/desktop/28bb7000/img/favicon_32x32.png"></a><a class="intro" style="animation-delay: -1s;" href="https://discord.gg/Ch8Y4RaABx" title="Join my Discord server!">Discord <img src="https://cdn.discordapp.com/emojis/1251637615028080641.webp?size=56&quality=lossless"></a><a class="intro" style="animation-delay: -0.5s;" href="https://youtube.com/playlist?list=PLksBvzvTsMzBPHszxRVH85X8yxSZc_2JU" title="Listen to my music!">Music 🎵</a></h2>
+    <script type="text/javascript">
+        document.body.addEventListener("pointermove", function(event) {
+            document.getElementById("SMBBButton").style.transform = "RotateX(" + Math.sqrt(event.screenY) * -1 + "deg) RotateY(" + Math.sqrt(event.screenX) + "deg)";
+        });
+    </script>
 </body>
 </html>
