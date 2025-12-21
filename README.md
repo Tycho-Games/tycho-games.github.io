@@ -1,5 +1,1 @@
-## THE WEBSITE IS NOT YET FINISHED AND IS STILL WORK IN PROGRESS!
-
-Welcome to the temporary version of my the Tycho Games website. This website will be updated soon!
-
-There are big changes happening in the main branch. The website will update when specific significant files are ready.
+This is the temporary version of the Tycho Games website. The website will update when specific significant files are ready to be added to the website.
